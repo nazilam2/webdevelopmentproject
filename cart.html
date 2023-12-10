@@ -1,0 +1,129 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Shopping Cart</title> 
+   
+   <style>
+     
+     body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 20px;
+     }
+
+     h1 {
+      color: #333;
+      text-align: center;
+     }
+
+     .cart-items {
+       list-style: none;
+       padding: 0;
+       margin-top: 20px;
+     }
+
+     .cart-item {
+       border-bottom: 1px solid #ccc;
+       padding: 10px;
+       display: flex;
+       justify-content: space-between;
+     }
+
+     .delete-btn {
+       background-color: #ff0000;
+       color: #fff;
+       border: none;
+       padding: 5px 10px;
+       cursor: pointer;
+     }
+
+     .total-cost {
+       margin-top: 20px;
+       text-align: right;
+       font-size: 18px;
+       color: red;
+     }
+
+   </style>
+</head>
+<body>
+   <h1>Shopping Cart</h1>
+
+   <ul class="cart-items" id="cartItemsList">
+
+   </ul>
+
+   <div class="total-cost" id="totalCost"></div>                           </div>
+
+  
+   <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Retrieve cart items passed from the main page using URL parameters
+      const urlParams = new URLSearchParams(window.location.search);
+      const cartItemsParam = urlParams.get('cartItems'); // Assuming cart items are passed as a query parameter
+  
+      // Parse the cart items (Example: assuming it's passed as JSON string)
+      const cartItems = JSON.parse(decodeURIComponent(cartItemsParam));
+      const totalCostContainer = document.getElementById('totalCost');
+  
+      // Function to display cart items
+      function displayCartItems() {
+        const cartItemsList = document.getElementById('cartItemsList');
+  
+        // Clear any previous content in the cart items list
+        cartItemsList.innerHTML = '';
+  
+        // Display each item in the cart
+        cartItems.forEach(item => {
+          const listItem = document.createElement('li');
+          listItem.classList.add('cart-item');
+  
+          // Create elements for displaying item details
+          const itemName = document.createElement('span');
+          itemName.textContent = item.name; // Replace with the name property of your item
+  
+          const itemQuantity = document.createElement('span');
+          itemQuantity.textContent = `Quantity: ${item.quantity || 1}`; // Replace with the quantity property of your item
+  
+          const itemPrice = document.createElement('span');
+          itemPrice.textContent = `Price: $${item.price}`; // Replace with the price property of your item
+  
+          // Create a delete button for each item
+          const deleteButton = document.createElement('button');
+          deleteButton.textContent = 'Delete';
+          deleteButton.classList.add('delete-btn');
+          deleteButton.addEventListener('click', () => {
+            // Implement logic to delete the item from the cart (remove it from the list)
+            // You can use item ID or other unique identifier to remove the item from the cart
+            // After deleting, update the cart display
+            cartItems.splice(cartItems.indexOf(item), 1);
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+            displayCartItems(); // Update the cart display after deletion
+          });
+  
+          // Append elements to the list item
+          listItem.appendChild(itemName);
+          listItem.appendChild(itemQuantity);
+          listItem.appendChild(itemPrice);
+          listItem.appendChild(deleteButton);
+  
+          // Append the list item to the cart list
+          cartItemsList.appendChild(listItem);
+        });
+
+
+        //Calculate total cost
+        const totalCost = cartItems.reduce((acc, item) => acc + item.price, 0);
+
+        //Display total cost
+        totalCostContainer.textContent = `Total Cost: $${totalCost.toFixed(2)}`;
+      }
+  
+      // Call the function to display cart items
+      displayCartItems();
+    });
+  </script>
+</body>
+</html>
+
+
+

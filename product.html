@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Page</title>
+  <!-- Add your CSS link or embedded styles here -->
+  <link rel="stylesheet" href="product.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(182, 200, 215); width: 100%;">
+    <div class="container">
+      <a class="navbar-brand" href="#">YourShop</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form id="searchForm" class="form-inline my-2 my-lg-0 ml-auto">
+          <div class="input-group">
+            <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </div>
+          </div>
+        </form>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+          <li class="nav-item">
+            <a id="cartLink" class="nav-link" href="cart.html">
+              <i class="fa fa-shopping-bag" style="font-size: 36px;"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Second Navbar   #f4d3d3  -->
+  <div class="topnav" style="background-color: rgb(132, 133, 137);">
+    <a class="active" href="#home">Home</a>
+    <a href="product.html">Shop</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <div class="products-container" id="products-container">
+    <!-- First row of products -->
+    <div class="product">
+      <img src="boy1.jpeg" alt="Product 1">
+      <h3>Black T-Shirt</h3>
+      <p>Black T-Shirt</p>
+      <p>Price: $10</p>
+      <div class="btn-shop">
+        <!--"Add to Cart" -->
+        <button class="add-to-cart" data-price="10">Add to Cart</button>
+      </div>
+    </div>
+    <div class="product">
+      <img src="boy10.jpeg" alt="Product 2">
+      <h3>Rainbow T-Shirt</h3>
+      <p>Rainbow T-Shirt</p>
+      <p>Price: $12</p>
+      <div class="btn-shop">
+        <!--"Add to Cart" -->
+        <button class="add-to-cart" data-price="10">Add to Cart</button>
+      </div>
+    </div>
+    <div class="product">
+      <img src="purple.jpeg" alt="Product 3">
+      <h3>Purple T-Shirt</h3>
+      <p>PurpleT-Shirt</p>
+      <p>Price: $15</p>
+      <div class="btn-shop">
+        <!--"Add to Cart" -->
+        <button class="add-to-cart" data-price="10">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="boy12.jpg" alt="Product 4">
+      <h3>Tricolor T-Shirt</h3>
+      <p>Tricolor T-Shirt</p>
+      <p>Price: $9</p>
+      <div class="btn-shop">
+        <!--"Add to Cart" -->
+        <button class="add-to-cart" data-price="10">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Repeat this structure to create additional rows of products -->
+    <!-- Second row of products -->
+    <div class="product">
+      <img src="panda.jpeg" alt="Product 5">
+      <h3>Dark Grey T-Shirt</h3>
+      <p>Dark Grey T-Shirt</p>
+      <p>Price: $10</p>
+      <div class="btn-shop">
+        <!--"Add to Cart" -->
+        <button class="add-to-cart" data-price="10">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <!--Image 6-->
+      <img src="yellow.jpeg" alt="Product 6">
+      <h3>Yellow T-Shirt</h3>
+      <p>Yellow T-Shirt</p>
+      <p>Price: $12</p>
+      <div class="btn-shop">
+        <button class="add-to-cart" data-price="10">Add to Cart</button>
+      </div>
+    </div>
+    <div class="product">
+      <!--Image 7-->
+      <img src="lightblue.jpeg" alt="Product 7">
+      <h3>Light Blue T-Shirt</h3>
+      <p>Light Blue T-Shirt</p>
+      <p>Price: $15</p>
+      <div class="btn-shop">
+        <button class="add-to-cart" data-price="10">Add to Cart</button>
+      </div>
+    </div>
+    <div class="product">
+      <!--Image 8-->
+      <img src="boy8.jpeg" alt="Product 8">
+      <h3>Black White T-Shirt</h3>
+      <p>Black White T-Shirt</p>
+      <p>Price: $9</p>
+      <div class="btn-shop">
+        <button class="add-to-cart" data-price="10">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Your HTML code -->
+
+  <!-- Include necessary JavaScript libraries -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script>
+    // Initialize an empty array to store the items in the cart
+    let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+    // Function to handle adding products to the cart
+    function addToCart(event) {
+      const button = event.target;
+      const price = parseFloat(button.getAttribute('data-price'));
+      const productName = button.parentElement.parentElement.querySelector('h3').textContent;
+
+      // Add the item to the cart array
+      cartItems.push({ name: productName, price: price });
+
+      // Save the cart items to localStorage
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+      // Provide feedback to the user (for example, using an alert)
+      alert(`${productName} added to your cart!`);
+
+      // Redirect to the cart page
+      redirectToCart();
+
+      // Prevent the default behavior of the button (which is to redirect)
+      event.preventDefault();
+    }
+
+    // Function to redirect to the shopping cart page
+    function redirectToCart() {
+      console.log('Redirecting to cart.html');
+
+      // Pass the cart items as a query parameter
+      const cartItemsParam = encodeURIComponent(JSON.stringify(cartItems));
+      // Redirect to the shopping cart page with the cart items parameter
+      // Replace this with the actual URL of your shopping cart page
+      window.location.href = `cart.html?cartItems=${cartItemsParam}`;
+    }
+
+    // Event listener for 'Add to Cart' buttons
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    addToCartButtons.forEach(button => {
+      button.addEventListener('click', addToCart);
+    });
+
+    //Function to filter the products based on the search query
+    function filterProducts(searchQuery) {
+      const productsContainer = document.getElementById('products-container');
+      const products = productsContainer.getElementsByClassName('product');
+
+      for(const product of products) {
+        const productName = product.querySelector('h3').textContent.toLowerCase();
+
+        //If the product name includes the search query, show the product; otherwise, hide it
+        if(productName.includes(searchQuery)) {
+          product.style.display = 'block';
+        } else {
+          product.style.display = 'none';
+        }
+      }
+    }
+
+    // Event listener for search form submission
+    const searchInputForm = document.getElementById('searchForm');
+    const searchInput = document.getElementById('searchInput');
+    searchInputForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const searchQuery = searchInput.value.trim().toLowerCase();
+      filterProducts(searchQuery);
+    });
+
+    // Handling the shopping cart link (cartLink) click event to redirect to the cart page
+    const shoppingCartLink = document.getElementById('cartLink');
+    shoppingCartLink.addEventListener('click', function(event) {
+      event.preventDefault();
+      // Redirect to the shopping cart page
+      redirectToCart();
+    });
+  </script>
+
+</body>
+</html>
