@@ -1,0 +1,335 @@
+*{
+  margin: 0;
+  padding: 0;
+    
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login, .searchbar {
+    flex: 1; /* Distribute available space evenly between these two elements */
+}
+
+/* second nav bar */
+.topnav {
+    overflow: hidden;
+    background-color: #f4d3d3;
+    display: flex; /* Use flexbox to center-align the links horizontally */
+    justify-content: center; /* Center-align the links horizontally */
+}
+
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: rgb(212, 44, 44);
+}
+
+.topnav a.active {
+    
+    color: white;
+}
+
+.home {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('2318-FF-Carousel-734x380.jpeg');
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.home:hover {
+    transform: scale(1.05); /* Increase size on hover */
+    transition: all 0.5s ease;
+}
+
+.content {
+    text-align: center;
+    color: #928989;
+}
+
+.content h1 {
+    font-size: 50px;
+}
+
+#btn1 button {
+    width: 150px;
+    height: 32px;
+    background: transparent;
+    border: 1px solid black;
+    letter-spacing: 3px;
+    font-weight: bold;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    cursor: pointer;
+}
+
+#btn1 button:hover {
+    background-color: rgb(0, 107, 128);
+    color: white;
+}
+
+@media screen and (max-width:420px){
+    .content h1{
+        font-size: 30px;
+    }
+}
+
+
+
+/*  nev bar file */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0.125em;
+  }
+
+
+
+
+  /*  this is footer */
+footer {
+    background-color: rgb(182, 200, 215);
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .footer-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-section a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .footer-section a:hover {
+    color: #ff9900; /* Change to your highlight color */
+  }
+  
+  .social-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  
+  .social-icon:hover {
+    color: #ff9900; /* Change to your highlight color */
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color:rgb(182, 200, 215);
+  }
+  
+  .footer-bottom a {
+    color: #ff9900; /* Change to your highlight color */
+    text-decoration: none;
+  }
+  
+  .footer-bottom a:hover {
+    text-decoration: underline;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+   /* Reference: w3schools  */ 
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #dba2cf;
+    color: rgb(255, 255, 255);
+  }
+ /* End of Reference: w3schools  */ 
+  
+/*   customer-reviews  style */
+.customer-reviews {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.customer-reviews h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.review {
+    flex: 0 1 calc(25% - 20px); /* Adjust this value as needed */
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+.review:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review p {
+    margin: 10px 0;
+}
+
+.review-text {
+    font-style: italic;
+    color: #555;
+}
+
+.user-info p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.rating {
+    color: #f1c40f; /* Star color */
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    .review {
+        flex: 0 1 calc(50% - 20px);
+    }
+} /* end of customer review */
+
+
+/*  products part  */
+/* styles for displaying four products in one row */
+.products-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: -10px; /* Reduce the negative margin */
+}
+
+.product {
+  flex: 0 1 calc(25% - 20px); /* Adjust this value as needed */
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product p {
+  margin: 10px 0;
+}
+
+.product img {
+  width: 100%; /* Ensure the image fills its container */
+  height: 200px; /* Set a fixed height for the images (adjust as needed) */
+  object-fit: contain; /* Maintain aspect ratio and fit entire image within the container */
+  object-position: center; /* Center the image vertically */
+  margin-bottom: 10px;
+}
+
+.product h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.btn-shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.btn-shop button {
+  width: 100px;
+  height: 32px;
+  background: transparent;
+  border: 1px solid black;
+  letter-spacing: 1px;
+  font-weight: bold;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn-shop button:hover {
+  background-color: rgb(0, 107, 128);
+  color: white;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .product {
+    flex: 0 1 calc(50% - 20px);
+    max-width: calc(50% - 20px); /* Adjust the maximum width for smaller screens */
+    margin: 10px; /* Adjust margin for smaller screens */
+  }
+}

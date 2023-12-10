@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your E-Commerce Store</title>
+
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Your custom CSS -->
+    <style>
+           /* Custom button style */
+           .btn-custom {
+            width: auto; /* Adjusted width */
+            height: 32px;
+            background: transparent;
+            border: 1px solid black;
+            letter-spacing: 1px; /* Adjusted letter spacing for better appearance */
+            font-weight: bold;
+            transition: background-color 0.5s ease, color 0.5s ease;
+            cursor: pointer;
+            display: inline-flex; /* Use flexbox for better alignment */
+            align-items: center; /* Vertically center the text */
+            justify-content: center; /* Horizontally center the text */
+            text-align: center; /* Center the text within the button */
+            padding: 6px 12px; /* Added padding for better appearance */
+        }
+
+        .btn-custom:hover {
+            background-color: rgb(0, 107, 128);
+            color: white;
+        }
+
+        footer {
+            background-color: rgb(182, 200, 215) !important;
+        }
+        /* second nav bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #f4d3d3;
+            display: flex; /* Use flexbox to center-align the links horizontally */
+            justify-content: center; /* Center-align the links horizontally */
+        }
+
+        .topnav a {
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            margin-right: 10px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: rgb(212, 44, 44);
+        }
+
+        .topnav a.active {
+            
+            color: white;
+        }
+        header.jumbotron {
+            margin-bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+ 
+    <header class="jumbotron" style="background-color: rgb(182, 200, 215);">
+        <h1 class="display-4">Welcome to Naz&Rati E-Commerce Store</h1>
+        <p class="lead">Discover amazing products at great prices.</p>
+        <a class="btn btn-custom btn-lg" href="#">Shop Now</a> <!-- Added btn-custom class -->
+    </header>
+          <!-- Second Navbar   #f4d3d3  -->
+    <div class="topnav" style="background-color: rgb(132, 133, 137);">
+    <a class="active" href="homepage.html">Home</a>
+    <a href="product.html">Shop</a>
+    <a href="contact.html">Contact</a>
+    <a href="about1.html">About</a>
+</div>
+    
+    <!-- Featured products section -->
+    <section class="container">
+        <h2 class="text-center">What We Offer</h2>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Product.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Quality Products</h5>
+                        <p class="card-text">Explore a selection of premium, high-quality products that meet our strict standards. We're committed to providing the best for our customers.</p>
+                        <a href="#" class="btn btn-custom">View Collection</a> <!-- Custom class added -->
+                    </div>
+                </div>
+            </div>
+            <!-- Similar changes for other cards -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="unbeatable-price.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Unbeatable Prices</h5>
+                        <p class="card-text">Shop with confidence knowing that you'll find unbeatable prices on all our products. We aim to offer exceptional value for your money.</p>
+                        <a href="#" class="btn btn-custom">Explore Deals</a> <!-- Custom class added -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="customerser.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Exceptional Customer Service</h5>
+                        <p class="card-text">Our dedicated customer support team is available to assist you at every step. Your satisfaction is our top priority.</p>
+                        <a href="#" class="btn btn-custom">Get in Touch</a> <!-- Custom class added -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+   <!-- Footer section without the bg-dark class -->
+    <footer class="text-white text-center py-3">
+        <p>&copy; 2023 Naz&Rati | Designed by Naz&Rati</p>
+    </footer>
+
+    <!-- Add Bootstrap and jQuery scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
