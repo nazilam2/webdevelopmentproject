@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "name": "Black T-Shirt",
+      "description": "Black T-Shirt",
+      "price": 10,
+      "image": "boy1.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Rainbow T-Shirt",
+      "description": "Rainbow T-Shirt",
+      "price": 12,
+      "image": "boy10.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Purple T-Shirt",
+      "description": "Purple T-Shirt",
+      "price": 15,
+      "image": "purple.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Tricolor T-Shirt",
+      "description": "Tricolor T-Shirt",
+      "price": 9,
+      "image": "boy12.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Dark Grey T-Shirt",
+      "description": "Dark Grey T-Shirt",
+      "price": 10,
+      "image": "panda.jpeg"
+    }
+  ]
+  

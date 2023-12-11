@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .products-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px; /* Add negative margin to offset padding on individual products */
+  }
+
+  .product {
+    flex: 0 1 calc(25% - 20px); /* Adjust this value as needed */
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-right: 20px; /* Add right margin for spacing between products */
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+
+  .product:hover {
+    transform: translateY(-5px);
+  }
+
+  .product img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .product h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+
+  .product p {
+    color: #555;
+    margin-bottom: 10px;
+  }
+
+  .btn-shop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .btn-shop button {
+    width: 100px;
+    height: 32px;
+    background: transparent;
+    border: 1px solid black;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    cursor: pointer;
+  }
+
+  .btn-shop button:hover {
+    background-color: green;
+    color: black;
+  }
+
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .product {
+      flex: 0 1 calc(50% - 20px);
+    }
+  }
+
+  
+    
+  *{
+    margin: 0;
+    padding: 0;
+    
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login, .searchbar {
+    flex: 1; /* Distribute available space evenly between these two elements */
+}
+
+/* second nav bar */
+.topnav {
+    overflow: hidden;
+    background-color: #f4d3d3;
+    display: flex; /* Use flexbox to center-align the links horizontally */
+    justify-content: center; /* Center-align the links horizontally */
+}
+
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: rgb(212, 44, 44);
+}
+
+.topnav a.active {
+    
+    color: white;
+}
+.products-container {
+    margin-top: 20px; /* Add margin to create space between products and the navigation bars */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px; /* Add negative margin to offset padding on individual products */
+  }
