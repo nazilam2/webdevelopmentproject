@@ -85,3 +85,11 @@ User passwords are securely encrypted before storage in the database for enhance
 Contact Form Validation and Thank You Message
 The contact page includes email validation to ensure the correctness of user-submitted email addresses.
 A thank you message is displayed to users upon successful submission of the contact form.
+
+## deployment
+1. download the source code from github: https://github.com/nazilam2/webdevelopmentproject
+3. open the folder in vsc
+4. start a msyql database and login using provided access details
+5. launch the server.js from the downloaded files
+6. click on the localhost link that shows up in the terminal of visual studio code
+7. now you can navigate through the website by clicking on the navrbar links
